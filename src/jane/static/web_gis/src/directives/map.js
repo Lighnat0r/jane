@@ -406,6 +406,9 @@ app.directive('openlayers3', function($q, $log, bing_key, $modal) {
                     })
                 };
 
+                // Update number of events in sidebar.
+                $scope.num_events_shown = events.features.length;
+
                 if ($scope.event_layer) {
                     map.removeLayer($scope.event_layer);
                     $scope.event_layer = {};

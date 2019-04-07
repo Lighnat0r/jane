@@ -241,6 +241,7 @@ module.controller("BayNetController", function($scope, $log, stations, station_c
 
     events.update();
     $scope.geojson_events = events.events;
+    $scope.num_events_shown = 0;
 
     stations.update();
     $scope.geojson_stations = stations.stations;

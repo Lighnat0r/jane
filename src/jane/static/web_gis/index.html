@@ -202,12 +202,11 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row text-center">
             <div class="col-md-12" style="padding-top:5px">
                 <small>
-                    <center>Total Events in Catalog:
-                    {{ geojson_events.features.length }}
-                    </center>
+                    Number of events matching settings:
+                    {{num_events_shown}} out of {{ geojson_events.features.length }}
                 </small>
             </div>
         </div>
